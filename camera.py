@@ -4,7 +4,7 @@ import cv2
 class Camera:
 
     def __init__(self):
-        self.camera = cv2.VideoCapture("rtsp://admin:1EcO3974@192.168.1.5/Streaming/Channels/1")
+        self.camera = cv2.VideoCapture("rtsp://admin:password@192.168.1.5/Streaming/Channels/1")
         if not self.camera.isOpened():
             raise ValueError("Unable to open camera!")
         
